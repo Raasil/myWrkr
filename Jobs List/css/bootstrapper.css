@@ -1,11 +1,5 @@
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Poiret One";
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -13,6 +7,32 @@ body {
   margin: 0;
   background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/10/wood-wallpaper-20.jpg");
 }
+
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poiret One";
+  color: white;
+  background-color: black;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Pathway Gothic One";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 article,
 aside,
 details,
@@ -85,6 +105,17 @@ sup {
   font-family: "Pathway Gothic One";
   font-weight: bold;
 }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 sub {
   bottom: -.25em;
 }
@@ -110,9 +141,75 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family:"Poiret One";
   font-size: 1em;
 }
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Poiret One";
+  background-color: black;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: black;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
 button,
 input,
 optgroup,
@@ -266,7 +363,7 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
+  font-family: 'Poiret One';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
@@ -1091,7 +1188,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: white;
-  background-color: #white;
+  background-color: white;
 }
 input,
 button,
@@ -1102,7 +1199,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: white;
   text-decoration: none;
 }
 a:hover,
@@ -1542,7 +1639,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Courgette", "Courier New", monospace;
+  font-family: "Poiret One", "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -6001,7 +6098,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Courgette", Helvetica, Arial, sans-serif;
+  font-family: "Poiret One", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -6120,7 +6217,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Courgette", Helvetica, Arial, sans-serif;
+  font-family: "Poiret One", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
@@ -6389,7 +6486,7 @@ button.close {
 .carousel-control .icon-next {
   width: 20px;
   height: 20px;
-  font-family: serif;
+  font-family: "Poiret One";
   line-height: 1;
 }
 .carousel-control .icon-prev:before {
