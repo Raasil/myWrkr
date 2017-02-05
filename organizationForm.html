@@ -64,7 +64,8 @@
             <div class="intro-body">
                 <div class="container">
                     <div class="jumbotron">
-                        <h1> Volunteer Profile</h1>
+                        <h1> Organization Profile</h1>
+                        <h4>Organization Correspondant: <h4>
                         <form>
                             <!-- fn, ln, email, phone#, dropdown(area of intrest), resume uplaod, police check upload, date add ins-->
                             <div class="input-group">
@@ -95,7 +96,7 @@
 
                               <div class="dropdown">
                                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Areas of Interest
+                                    Volunteer Type
                                     <span class="caret"></span>
                                   </button>
                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -103,14 +104,24 @@
                                     <li><a href="#">Education</a></li>
                                     <li><a href="#">Hard Labour</a></li>
                                     <li><a href="#">Art</a></li>
+                                    <li><a href="#">Other</a></li>
                                   </ul>
                                 </div>
                               </div>
-                            </div>                                
+                            </div> 
+                            <br> 
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="comment">Job Description:</label>
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>   
+                              </div>   
+                            </div>                        
                             <br>
                             <div class="row">
                               <div class="col-md-6">
-                                <label class="control-label">Resume</label>
+                                <label class="control-label">Application Form</label>
                                 <input type="file" class="file" id="resume" placeholder="Resume" aria-describedby="basic-addon1" >
                               </div>
                               <div class="col-md-6">
@@ -119,7 +130,7 @@
                               </div>
                             </div>                                
                             <br>
-                            <h5> Date Availability </h5>
+                            <h5> Dates Volunteers Will Be Needed </h5>
                             <div class='col-md-5'>
                                     <div class='input-group date' id='datetimepicker6'>
                                         <input type='text' class="form-control" />

@@ -64,19 +64,8 @@
             <div class="intro-body">
                 <div class="container">
                     <div class="jumbotron">
-                        <h1> Volunteer Profile</h1>
-                        <form>
-                            <!-- fn, ln, email, phone#, dropdown(area of intrest), resume uplaod, police check upload, date add ins-->
-                            <div class="input-group">
-                              <span class="input-group-addon"></span>
-                              <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" id="firstName">
-                            </div> 
-                            <br>
-                            <div class="input-group">
-                              <span class="input-group-addon"></span>
-                              <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1" id="lastName">
-                            </div> 
-                            <br>
+                        <h1> Login</h1>
+                        <form action="./JobsList/joblist.html" method="POST">
                             <div class="input-group">
                               <span class="input-group-addon"></span>
                               <input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1" id="email">
@@ -86,56 +75,6 @@
                               <span class="input-group-addon"></span>
                               <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" id="password">
                             </div> 
-                            <br>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="+1(777)777-7777" data-format="+1 (ddd) ddd-dddd" id="phoneNumber">
-                              </div>
-                              <div class="col-md-6">
-
-                              <div class="dropdown">
-                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    Areas of Interest
-                                    <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">Health Care</a></li>
-                                    <li><a href="#">Education</a></li>
-                                    <li><a href="#">Hard Labour</a></li>
-                                    <li><a href="#">Art</a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>                                
-                            <br>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <label class="control-label">Resume</label>
-                                <input type="file" class="file" id="resume" placeholder="Resume" aria-describedby="basic-addon1" >
-                              </div>
-                              <div class="col-md-6">
-                                <label class="control-label">Police Check (if applicable)</label>
-                                <input type="file" class="file" id="policeCheck" placeholder="Police Check" aria-describedby="basic-addon1" >
-                              </div>
-                            </div>                                
-                            <br>
-                            <h5> Date Availability </h5>
-                            <div class='col-md-5'>
-                                    <div class='input-group date' id='datetimepicker6'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                            </div>
-                            <div class='col-md-5'>
-                                    <div class='input-group date' id='datetimepicker7'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                            </div>
                         <script type="text/javascript">
                             $(function () {
                                 $('#datetimepicker6').datetimepicker();
@@ -150,7 +89,8 @@
                                 });
                             });
                         </script>
-                              <button type="submit" class="btn btn-default">Submit</button>
+                        <br>
+                              <button type="submit" class="btn btn-default" >Submit</button>
                         </form>
                     </div>
                 </div>
